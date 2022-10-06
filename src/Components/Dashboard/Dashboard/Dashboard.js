@@ -1,14 +1,14 @@
-import React from 'react';
-import Drawer from '../Drawer/Drawer';
-import Pages from '../Pages/Pages/Pages';
+import React from "react";
+import Pages from "../Pages/Pages/Pages";
+import Grid from "@mui/material/Grid";
+import DrawerNav from "../DrawerNav/DrawerNav";
 
 const Dashboard = () => {
-    return (
-        <div>
-            <Drawer></Drawer>
-            <Pages></Pages>
-        </div>
-    );
+  return (
+    <div>
+        <DrawerNav/>
+    </div>
+  );
 };
 
 export default Dashboard;
