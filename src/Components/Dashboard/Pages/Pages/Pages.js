@@ -6,14 +6,14 @@ import "./Pages.css";
 
 const Pages = () => {
   return (
-   <section>
-     <div>
-      <JobDep></JobDep>
-    </div>
-    <div>
-      <JobTitle/>
-    </div>
-   </section>
+    <section>
+      <div>
+        <JobDep></JobDep>
+      </div>
+      <div>
+        <JobTitle />
+      </div>
+    </section>
   );
 };
 

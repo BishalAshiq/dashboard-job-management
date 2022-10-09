@@ -8,22 +8,21 @@ import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
 import { Container } from "@mui/system";
 
 const SidebarHome = () => {
   return (
     <div>
-
       <Container className="side-search-sec">
         <div className="side_search">
-          <SearchIcon style={{color:"white"}}/>
-          <input type="text"/>
+          <SearchIcon style={{ color: "white" }} />
+          <input type="text" />
         </div>
       </Container>
 
       <section className="sidebar-home">
         <HomeIcon
-          color="disabled"
           style={{ width: 30, marginRight: 10, color: "rgb(247, 243, 238)" }}
         />
         <h3>Home</h3>
@@ -48,13 +47,12 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
+          <div style={{ paddingLeft: "50px" }}>
             <unl
               style={{
                 textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
                 color: "white",
+                fontSize: 14,
               }}
             >
               <li>View all users</li>
@@ -82,13 +80,12 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
+          <div style={{ paddingLeft: "50px" }}>
             <unl
               style={{
                 textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
                 color: "white",
+                fontSize: 14,
               }}
             >
               <li>View all</li>
@@ -106,6 +103,8 @@ const SidebarHome = () => {
               justifyContent: "space-evenly",
               alignItems: "center",
               textAlign: "center",
+              backgroundColor: "#003300",
+              borderRadius: 5,
             }}
           >
             <Person3OutlinedIcon style={{ marginRight: 4, color: "white" }} />
@@ -114,13 +113,12 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
+          <div style={{ paddingLeft: "50px" }}>
             <unl
               style={{
                 textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
                 color: "white",
+                fontSize: 14,
               }}
             >
               <li>View all jobs</li>
@@ -146,13 +144,12 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
+          <div style={{ paddingLeft: "50px" }}>
             <unl
               style={{
                 textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
                 color: "white",
+                fontSize: 14,
               }}
             >
               <li>View all</li>
@@ -180,13 +177,12 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
+          <div style={{ paddingLeft: "50px" }}>
             <unl
               style={{
                 textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
                 color: "white",
+                fontSize: 14,
               }}
             >
               <li>View all</li>
@@ -213,19 +209,15 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div>
-            <unl
-              style={{
-                textAlign: "justify",
-                display: "grid",
-                placeItems: "center",
-                color: "white",
-              }}
-            >
-              <li>Coffee</li>
-              <li>Tea</li>
-              <li>Milk</li>
-            </unl>
+          <div
+            style={{
+              backgroundColor: "#003300",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <TuneRoundedIcon style={{ marginLeft: 80, color: "white" }} />
+            <h4 style={{ marginLeft: 10, color: "white" }}>Setting</h4>
           </div>
         </section>
       </div>

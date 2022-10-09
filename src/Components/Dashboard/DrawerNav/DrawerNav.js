@@ -95,7 +95,7 @@ const DrawerNav = () => {
             </IconButton>
             <div style={{ color: "green" }} className="page-nav">
               <div>
-                <h2 style={{display:"inline"}}>Job Management</h2>
+                <h2 style={{ display: "inline" }}>Job Management</h2>
               </div>
 
               <div className="page-nav-icons">
@@ -132,25 +132,26 @@ const DrawerNav = () => {
           >
             <div className="sidebar-tops">
               <div className="sidebar-avatar">
-              <Stack direction="row" spacing={2}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-              </Stack>
+                <Stack direction="row" spacing={2}>
+                  <Avatar
+                    alt="Remy Sharp"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOpBzZ5ZzJnje_hCvMVsL6ZLCs7oT2yGivf0ZBaQJ0A&s"
+                  />
+                </Stack>
               </div>
               <div className="sidebar-text">
                 <h4>Anarul Islam</h4>
                 <h6>Admin</h6>
               </div>
-             <div className="sidebar-icon">
-             
-             </div>
+              <div className="sidebar-icon"></div>
             </div>
             <IconButton onClick={handleDrawerClose}>
-                {theme.direction === "ltr" ? (
-                  <ChevronLeftIcon />
-                ) : (
-                  <ChevronRightIcon />
-                )}
-              </IconButton>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
           </DrawerHeader>
 
           <div>

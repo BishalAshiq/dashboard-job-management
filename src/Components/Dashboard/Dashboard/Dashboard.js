@@ -4,7 +4,7 @@ import DrawerNav from "../DrawerNav/DrawerNav";
 const Dashboard = () => {
   return (
     <div>
-        <DrawerNav/>
+      <DrawerNav />
     </div>
   );
 };
