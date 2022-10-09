@@ -19,7 +19,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import SidebarHome from "../SidebarHome/SidebarHome";
 
-const drawerWidth = 350;
+const drawerWidth = 310;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({

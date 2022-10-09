@@ -54,12 +54,22 @@
 .available{
     height: 300px;
     border: 1px solid green;
-    padding: 30px 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 31px 0;
     background-color: green;
 
 }
 
 /* Jobs Title */
+.Title-Jobs{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: -50px 20px;
+}
+.job-title{
+    margin-left: 20px;
+}
 .tab-icon{
     position: relative;
     float: right;
@@ -67,4 +77,52 @@
     align-items: center;
     padding-bottom: 50px;
     margin-top: -35px;
+}
+
+.calender-button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+    
+}
+.calender-button button{
+    color: aliceblue;
+    background-color: green;
+    border: none;
+    padding: 7px 15px;
+    margin: 2px;
+    border-radius: 5px;
+    margin-top: -40px;
+}
+.title-icon{
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+.box-1{
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.box-2{
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.box-3{
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+/* Pagination */
+.paginat{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
