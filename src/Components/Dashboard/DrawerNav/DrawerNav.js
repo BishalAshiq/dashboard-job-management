@@ -95,7 +95,7 @@ const DrawerNav = () => {
             </IconButton>
             <div style={{ color: "green" }} className="page-nav">
               <div>
-                <h2 style={{ display: "inline" }}>Job Management</h2>
+                <h2 style={{ display: "inline", fontWeight: 600 }}>Job Management</h2>
               </div>
 
               <div className="page-nav-icons">

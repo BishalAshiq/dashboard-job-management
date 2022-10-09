@@ -87,14 +87,14 @@ const JobDep = () => {
             <Grid item xs={6} md={4}>
               <div className="available">
                 <div>
-                  <h3 style={{ color: "white" }}>33</h3>
-                  <p style={{ marginTop: "-20px", color: "white" }}>
+                  <h3 style={{ color: "white", fontSize: 25 }}>33</h3>
+                  <p style={{ marginTop: "-20px", color: "white", fontWeight: 300 }}>
                     Available
                   </p>
                 </div>
                 <div>
-                  <h3 style={{ color: "white" }}>08</h3>
-                  <p style={{ marginTop: "-20px", color: "white" }}>Pending</p>
+                  <h3 style={{ color: "white", fontSize: 25 }}>08</h3>
+                  <p style={{ marginTop: "-20px", color: "white", fontWeight: 300 }}>Pending</p>
                 </div>
                 <div>
                   <Button
