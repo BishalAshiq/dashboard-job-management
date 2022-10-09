@@ -1,0 +1,15 @@
+.sidebar-home{
+    background-color: green;;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 100vh;
+    color: rgb(247, 243, 238);
+}
+.sidebar-accordion{
+    background-color: green;
+    border-bottom: none;
+}
+.accordion-item{
+    background-color: green;
+}

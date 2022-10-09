@@ -1,26 +1,25 @@
 import React from "react";
+import "./DrawerNav.css";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import Pages from "../Pages/Pages/Pages";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationActiveIcon from "@mui/icons-material/NotificationsActive";
+import MailOutlineSharp from "@mui/icons-material/MailOutlineSharp";
+import LanguageOutlined from "@mui/icons-material/LanguageOutlined";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import SidebarHome from "../SidebarHome/SidebarHome";
 
-const drawerWidth = 240;
+const drawerWidth = 350;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -60,7 +59,7 @@ const AppBar = styled(MuiAppBar, {
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
-  color:"white",
+  color: "white",
   alignItems: "center",
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
@@ -84,7 +83,7 @@ const DrawerNav = () => {
     <div>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open} style={{ background: '#fff' }}>
+        <AppBar position="fixed" open={open} style={{ background: "#fff" }}>
           <Toolbar>
             <IconButton
               aria-label="open drawer"
@@ -94,6 +93,23 @@ const DrawerNav = () => {
             >
               <MenuIcon />
             </IconButton>
+            <div style={{ color: "green" }} className="page-nav">
+              <div>
+                <h2>Job Management</h2>
+              </div>
+
+              <div className="page-nav-icons">
+                <div className="nav_search">
+                  <SearchIcon />
+                  <input type="text" />
+                </div>
+                <NotificationActiveIcon
+                  style={{ marginRight: 40, marginLeft: 20 }}
+                />
+                <MailOutlineSharp style={{ marginRight: 40 }} />
+                <LanguageOutlined style={{ marginRight: 40 }} />
+              </div>
+            </div>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -109,41 +125,37 @@ const DrawerNav = () => {
           anchor="left"
           open={open}
         >
-          <DrawerHeader>
+          <DrawerHeader
+            style={{
+              backgroundColor: "Green",
+            }}
+          >
+            <div className="sidebar-tops">
+              <div className="sidebar-avatar">
+              <Stack direction="row" spacing={2}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              </Stack>
+              </div>
+              <div className="sidebar-text">
+                <h4>Anarul Islam</h4>
+                <h6>Admin</h6>
+              </div>
+             <div className="sidebar-icon">
+             
+             </div>
+            </div>
             <IconButton onClick={handleDrawerClose}>
-              {theme.direction === "ltr" ? (
-                <ChevronLeftIcon />
-              ) : (
-                <ChevronRightIcon />
-              )}
-            </IconButton>
+                {theme.direction === "ltr" ? (
+                  <ChevronLeftIcon />
+                ) : (
+                  <ChevronRightIcon />
+                )}
+              </IconButton>
           </DrawerHeader>
-          <Divider />
-          <List>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
+
+          <div>
+            <SidebarHome></SidebarHome>
+          </div>
         </Drawer>
         <Main open={open}>
           <DrawerHeader />
