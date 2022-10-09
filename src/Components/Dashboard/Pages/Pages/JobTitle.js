@@ -67,7 +67,7 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20 }}
+                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
                 src={t1}
                 alt=""
               />
@@ -136,7 +136,7 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20 }}
+                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
                 src={t2}
                 alt=""
               />
@@ -205,7 +205,7 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20 }}
+                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
                 src={t3}
                 alt=""
               />
