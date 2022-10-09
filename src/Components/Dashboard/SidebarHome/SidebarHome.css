@@ -13,3 +13,24 @@
 .accordion-item{
     background-color: green;
 }
+.side-search-sec{
+    background-color: green;
+    padding: 20px 20px;
+}
+.side_search{
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    height: 22px;
+    color: gray;
+    background-color: green;
+    border: 1px solid rgb(254, 253, 253);
+    /* margin: 10px 35px; */
+}
+.side_search > input{
+    outline: none;
+    background: none;
+    border: none;
+    
+}
