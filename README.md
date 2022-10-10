@@ -4,5 +4,5 @@
 
 
 # Live Server
-  https://chimerical-horse-a9c9dd.netlify.app/
+  https://jobs-management-ui-genaral.netlify.app/
 
