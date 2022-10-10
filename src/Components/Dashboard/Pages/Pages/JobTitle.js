@@ -26,10 +26,8 @@ const JobTitle = () => {
     setValue(newValue);
   };
   return (
-    
     <Container className="Title-Jobs">
-      
-      <section style={{  paddingBottom: 40 }} >
+      <section style={{ paddingBottom: 40 }}>
         <div className="job-title">
           <Tabs
             value={value}
@@ -69,7 +67,12 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
+                style={{
+                  width: 130,
+                  height: 50,
+                  marginLeft: 20,
+                  borderRadius: 5,
+                }}
                 src={t1}
                 alt=""
               />
@@ -138,7 +141,12 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
+                style={{
+                  width: 130,
+                  height: 50,
+                  marginLeft: 20,
+                  borderRadius: 5,
+                }}
                 src={t2}
                 alt=""
               />
@@ -207,7 +215,12 @@ const JobTitle = () => {
             >
               <Checkbox {...label} defaultChecked />
               <img
-                style={{ width: 130, height: 50, marginLeft: 20, borderRadius: 5 }}
+                style={{
+                  width: 130,
+                  height: 50,
+                  marginLeft: 20,
+                  borderRadius: 5,
+                }}
                 src={t3}
                 alt=""
               />
@@ -267,7 +280,6 @@ const JobTitle = () => {
         </div>
       </section>
     </Container>
-    
   );
 };
 

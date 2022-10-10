@@ -12,7 +12,7 @@ const List = styled("ul")({
 
 const Paginat = () => {
   const { items } = usePagination({
-    count: 10,
+    count: 66,
   });
 
   return (
