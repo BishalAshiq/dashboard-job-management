@@ -6,7 +6,7 @@ import "./Pages.css";
 
 const Pages = () => {
   return (
-    <section>
+    <section style={{overFlow:"hidden"}}>
       <div>
         <JobDep></JobDep>
       </div>
