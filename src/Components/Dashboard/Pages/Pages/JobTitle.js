@@ -42,12 +42,12 @@ const JobTitle = () => {
           </Tabs>
         </div>
         <div className="tab-icon">
-          <DeleteIcon style={{ width: 20, height: 30, color: "red" }} />
+          <DeleteIcon style={{ width: 23, height: 33, color: "red", marginRight:10 }} />
           <Inventory2OutlinedIcon
-            style={{ width: 20, height: 30, color: "rgb(124, 124, 124)" }}
+            style={{ width: 23, height: 33, color: "rgb(124, 124, 124)", marginRight:10 }}
           />
           <MobileFriendlyOutlinedIcon
-            style={{ width: 20, height: 30, color: "green" }}
+            style={{ width: 23, height: 33, color: "green" }}
           />
         </div>
       </section>
