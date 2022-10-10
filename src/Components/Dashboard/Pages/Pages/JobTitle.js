@@ -26,8 +26,10 @@ const JobTitle = () => {
     setValue(newValue);
   };
   return (
+    
     <Container className="Title-Jobs">
-      <section style={{ borderBottom: "1px solid gray", paddingBottom: 40 }}>
+      
+      <section style={{  paddingBottom: 40 }} >
         <div className="job-title">
           <Tabs
             value={value}
@@ -36,18 +38,18 @@ const JobTitle = () => {
           >
             <Checkbox {...label} defaultChecked />
             <Tab label="All" />
-            <Tab label="Active" disabled />
-            <Tab label="Pendings" disabled />
-            <Tab label="Archived" disabled />
+            <Tab label="Active" />
+            <Tab label="Pendings" />
+            <Tab label="Archived" />
           </Tabs>
         </div>
         <div className="tab-icon">
-          <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
+          <DeleteIcon style={{ width: 20, height: 30, color: "red" }} />
           <Inventory2OutlinedIcon
-            style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
+            style={{ width: 20, height: 30, color: "rgb(124, 124, 124)" }}
           />
           <MobileFriendlyOutlinedIcon
-            style={{ width: 40, height: 29, color: "green" }}
+            style={{ width: 20, height: 30, color: "green" }}
           />
         </div>
       </section>
@@ -265,6 +267,7 @@ const JobTitle = () => {
         </div>
       </section>
     </Container>
+    
   );
 };
 
