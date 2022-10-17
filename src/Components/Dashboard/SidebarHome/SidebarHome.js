@@ -9,6 +9,7 @@ import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { Container } from "@mui/system";
 
 const SidebarHome = () => {
@@ -205,9 +206,7 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
             <h4 style={{ marginRight: 4, color: "white" }}>Miscillenious</h4>
-            <KeyboardArrowDownOutlinedIcon
-              style={{ marginRight: 4, color: "white" }}
-            />
+            <AddOutlinedIcon style={{ marginRight: 4, color: "white" }} />
           </div>
           <div
             style={{

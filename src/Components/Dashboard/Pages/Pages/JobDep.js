@@ -4,6 +4,7 @@ import { Button, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 
 const JobDep = () => {
   return (
@@ -123,6 +124,7 @@ const JobDep = () => {
                     color="success"
                     style={{ fontWeight: 400, fontSize: 14, type: "lowercase" }}
                   >
+                    <AddOutlinedIcon style={{width: 16}}/>
                     Create a job
                   </Button>
                 </div>
