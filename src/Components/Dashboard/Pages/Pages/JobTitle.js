@@ -42,11 +42,11 @@ const JobTitle = () => {
           </Tabs>
         </div>
         <div className="tab-icon">
-          <DeleteIcon style={{ width: 23, height: 33, color: "red", marginRight:10 }} />
-          <Inventory2OutlinedIcon
+          <DeleteIcon className="single-icon"  style={{ width: 23, height: 33, color: "red", marginRight:10 }} />
+          <Inventory2OutlinedIcon className="single-icon"
             style={{ width: 23, height: 33, color: "rgb(124, 124, 124)", marginRight:10 }}
           />
-          <MobileFriendlyOutlinedIcon
+          <MobileFriendlyOutlinedIcon className="single-icon"
             style={{ width: 23, height: 33, color: "green" }}
           />
         </div>
@@ -99,12 +99,12 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon />
+                <ToggleOnOutlinedIcon className="single-icon" />
                 <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon
+                <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
-                <MobileFriendlyOutlinedIcon
+                <MobileFriendlyOutlinedIcon className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -112,7 +112,7 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon
+                <RemoveRedEyeRoundedIcon className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
@@ -173,12 +173,12 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon />
+                <ToggleOnOutlinedIcon className="single-icon" />
                 <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon
+                <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
-                <MobileFriendlyOutlinedIcon
+                <MobileFriendlyOutlinedIcon className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -186,7 +186,7 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon
+                <RemoveRedEyeRoundedIcon className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
@@ -247,12 +247,12 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon />
+                <ToggleOnOutlinedIcon className="single-icon" />
                 <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon
+                <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "green" }}
                 />
-                <MobileFriendlyOutlinedIcon
+                <MobileFriendlyOutlinedIcon className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -260,7 +260,7 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon
+                <RemoveRedEyeRoundedIcon className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
