@@ -2,14 +2,14 @@ import React from "react";
 import "./SidebarHome.css";
 import HomeIcon from "@mui/icons-material/Home";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import NewspaperIcon from "@mui/icons-material/Newspaper";
-import Person3OutlinedIcon from "@mui/icons-material/Person3Outlined";
-import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
+import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
 import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
+import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
+import DeviceHubOutlinedIcon from '@mui/icons-material/DeviceHubOutlined';
 import { Container } from "@mui/system";
 
 const SidebarHome = () => {
@@ -24,13 +24,13 @@ const SidebarHome = () => {
 
       <section className="sidebar-home">
         <HomeIcon
-          style={{ width: 30, marginRight: 10, color: "rgb(247, 243, 238)" }}
+          style={{ width: 30, marginLeft: 15, color: "rgb(247, 243, 238)" }}
         />
-        <h3>Home</h3>
+        <h3 style={{fontWeight: 400, fontSize:18, paddingTop: 5}}>Home</h3>
       </section>
 
       <div>
-        <section className="accordion-item">
+        <section className="accordion-item" style={{marginTop:-20}}>
           <div
             style={{
               display: "flex",
@@ -41,14 +41,14 @@ const SidebarHome = () => {
             }}
           >
             <AccountCircleOutlinedIcon
-              style={{ marginRight: 4, color: "white" }}
+              style={{ marginRight: 4, color: "white", marginRight:-20 }}
             />
-            <h4 style={{ marginRight: 4, color: "white" }}>User Management</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400  }}>User Management</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px" }}>
+          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -64,7 +64,7 @@ const SidebarHome = () => {
             </unl>
           </div>
         </section>
-        <section className="accordion-item">
+        <section className="accordion-item" style={{paddingBottom: 20}}>
           <div
             style={{
               display: "flex",
@@ -73,15 +73,15 @@ const SidebarHome = () => {
               textAlign: "center",
             }}
           >
-            <NewspaperIcon style={{ marginRight: 4, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white" }}>
+            <StickyNote2OutlinedIcon style={{ marginRight: 4, color: "white" }} />
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>
               Notice & News Management
             </h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px" }}>
+          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -108,8 +108,8 @@ const SidebarHome = () => {
               borderRadius: 5,
             }}
           >
-            <Person3OutlinedIcon style={{ marginRight: 4, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white" }}>Job Management</h4>
+            <DeviceHubOutlinedIcon style={{ marginRight: -20, color: "#C3ABAB" }} />
+            <h4 style={{ marginRight: 4, color: "#C3ABAB" }}>Job Management</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -139,13 +139,14 @@ const SidebarHome = () => {
               textAlign: "center",
             }}
           >
-            <ArticleOutlinedIcon style={{ marginRight: 4, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white" }}>Blogs & article</h4>
+            <LibraryBooksOutlinedIcon style={{ marginRight: -20, color: "white" }} />
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Blogs & article</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px" }}>
+          <div style={{ paddingLeft: "50px", 
+                marginTop:-10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -171,14 +172,14 @@ const SidebarHome = () => {
             }}
           >
             <CelebrationOutlinedIcon
-              style={{ marginRight: 4, color: "white" }}
+              style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white" }}>Advertisement</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Advertisement</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px" }}>
+          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -203,9 +204,9 @@ const SidebarHome = () => {
             }}
           >
             <CelebrationOutlinedIcon
-              style={{ marginRight: 4, color: "white" }}
+              style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white" }}>Miscillenious</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Miscillenious</h4>
             <AddOutlinedIcon style={{ marginRight: 4, color: "white" }} />
           </div>
           <div

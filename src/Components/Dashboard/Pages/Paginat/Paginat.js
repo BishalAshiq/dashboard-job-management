@@ -2,8 +2,6 @@ import React from "react";
 import usePagination from "@mui/material/usePagination";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import EastIcon from "@mui/icons-material/East";
-import WestIcon from "@mui/icons-material/West";
 
 const List = styled("ul")({
   listStyle: "none",
@@ -53,13 +51,12 @@ const Paginat = () => {
                     color: "gray",
                     borderRadius: 5,
                     cursor: "pointer",
+                    padding: "5px 15px"
                   }}
                   type="button"
                   {...item}
                 >
-                  <WestIcon />
                   {type}
-                  <EastIcon />
                 </Button>
               );
             }

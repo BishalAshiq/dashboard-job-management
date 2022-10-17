@@ -2,6 +2,7 @@
   background-color: green;
   display: flex;
   align-items: center;
+  text-align: center;
   padding-left: 10px;
   color: rgb(247, 243, 238);
 }

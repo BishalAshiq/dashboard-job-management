@@ -94,6 +94,10 @@
   border-radius: 5px;
   margin-top: -40px;
 }
+.full-active {
+  font-size: 13px;
+  font-weight: 200;
+}
 .full-active:hover {
   cursor: pointer;
   transform: scale(1.1, 1.2);

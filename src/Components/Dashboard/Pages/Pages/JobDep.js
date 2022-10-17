@@ -95,10 +95,10 @@ const JobDep = () => {
             <Grid item xs={6} md={4}>
               <div className="available">
                 <div>
-                  <h3 style={{ color: "white", fontSize: 25 }}>33</h3>
+                  <h3 style={{ color: "white", fontSize: 40, marginTop: 10 }}>33</h3>
                   <p
                     style={{
-                      marginTop: "-20px",
+                      marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
                     }}
@@ -107,15 +107,15 @@ const JobDep = () => {
                   </p>
                 </div>
                 <div>
-                  <h3 style={{ color: "white", fontSize: 25 }}>08</h3>
+                  <h3 style={{ color: "white", fontSize: 40, marginTop: -10 }}>08</h3>
                   <p
                     style={{
-                      marginTop: "-20px",
+                      marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
                     }}
                   >
-                    Pending
+                    Pendings
                   </p>
                 </div>
                 <div>
