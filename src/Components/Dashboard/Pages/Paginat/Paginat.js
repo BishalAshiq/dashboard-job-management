@@ -1,6 +1,7 @@
 import React from "react";
 import usePagination from "@mui/material/usePagination";
 import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 
 const List = styled("ul")({
   listStyle: "none",
@@ -26,34 +27,37 @@ const Paginat = () => {
               children = "…";
             } else if (type === "page") {
               children = (
-                <button
-                  type="button"
+                <Button
+                  variant="outlined"
+                  color="success"
                   style={{
                     fontWeight: selected ? "bold" : undefined,
                     border: "none",
-                    margin: "0px 10px",
+                    cursor: "pointer",
                   }}
                   {...item}
                 >
                   {page}
-                </button>
+                </Button>
               );
             } else {
               children = (
-                <button
+                <Button
+                  variant="outlined"
+                  color="success"
                   style={{
                     backgroundColor: "white",
                     border: "1px solid rgb(124, 124, 124)",
-                    padding: "10px 20px",
                     margin: "0px 170px",
                     color: "gray",
                     borderRadius: 5,
+                    cursor: "pointer",
                   }}
                   type="button"
                   {...item}
                 >
                   {type}
-                </button>
+                </Button>
               );
             }
 

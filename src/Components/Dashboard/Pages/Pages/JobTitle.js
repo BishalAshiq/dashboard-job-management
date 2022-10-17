@@ -1,30 +1,73 @@
 import React from "react";
+import "./Pages.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { Container } from "@mui/system";
-import "./Pages.css";
-import Paginat from "../Paginat/Paginat";
-import DeleteIcon from "@mui/icons-material/Delete";
-import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
-import MobileFriendlyOutlinedIcon from "@mui/icons-material/MobileFriendlyOutlined";
-import Checkbox from "@mui/material/Checkbox";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import t1 from "../../../../Images/t-1.jpg";
 import t2 from "../../../../Images/t-2.jpg";
 import t3 from "../../../../Images/t-3.jpg";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-import ToggleOnOutlinedIcon from "@mui/icons-material/ToggleOnOutlined";
-import RemoveRedEyeRoundedIcon from "@mui/icons-material/RemoveRedEyeRounded";
-import { AntSwitch, Stack } from "@mui/material";
+import Paginat from "../Paginat/Paginat";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import Checkbox from "@mui/material/Checkbox";
+import DeleteIcon from "@mui/icons-material/Delete";
+import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
+import MobileFriendlyOutlinedIcon from "@mui/icons-material/MobileFriendlyOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import RemoveRedEyeRoundedIcon from "@mui/icons-material/RemoveRedEyeRounded";
+import { AntSwitch, FormControlLabel, Stack } from "@mui/material";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const JobTitle = () => {
   const [value, setValue] = React.useState(2);
+  // Checkbox
+  const [checked, setChecked] = React.useState([true, false]);
 
+  const handleChange1 = (event) => {
+    setChecked([
+      event.target.checked,
+      event.target.checked,
+      event.target.checked,
+    ]);
+  };
+
+  const handleChange2 = (event) => {
+    setChecked([event.target.checked, checked[1]]);
+  };
+
+  const handleChange3 = (event) => {
+    setChecked([checked[0], event.target.checked]);
+  };
+  const handleChange4 = (event) => {
+    setChecked([checked[1], event.target.checked]);
+  };
+
+  const childrenOne = (
+    <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+      <FormControlLabel
+        control={<Checkbox checked={checked[0]} onChange={handleChange2} />}
+      />
+    </Box>
+  );
+  const childrenTwo = (
+    <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+      <FormControlLabel
+        control={<Checkbox checked={checked[1]} onChange={handleChange3} />}
+      />
+    </Box>
+  );
+  const childrenThree = (
+    <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
+      <FormControlLabel
+        control={<Checkbox checked={checked[1]} onChange={handleChange4} />}
+      />
+    </Box>
+  );
+
+  // AntSwitch
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -83,7 +126,15 @@ const JobTitle = () => {
             onChange={handleChange}
             aria-label="disabled tabs example"
           >
-            <Checkbox {...label} defaultChecked />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={checked[0] && checked[1]}
+                  indeterminate={checked[0] !== checked[1]}
+                  onChange={handleChange1}
+                />
+              }
+            />
             <Tab label="All" />
             <Tab label="Active" />
             <Tab label="Pendings" />
@@ -124,7 +175,7 @@ const JobTitle = () => {
                 marginLeft: 20,
               }}
             >
-              <Checkbox {...label} defaultChecked />
+              {childrenOne}
               <img
                 style={{
                   width: 130,
@@ -159,9 +210,7 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <AntSwitch
-                    inputProps={{ "aria-label": "ant design" }}
-                  />
+                  <AntSwitch inputProps={{ "aria-label": "ant design" }} />
                 </Stack>
 
                 <DeleteIcon
@@ -209,7 +258,7 @@ const JobTitle = () => {
                 marginLeft: 20,
               }}
             >
-              <Checkbox {...label} defaultChecked />
+              {childrenTwo}
               <img
                 style={{
                   width: 130,
@@ -294,7 +343,7 @@ const JobTitle = () => {
                 marginLeft: 20,
               }}
             >
-              <Checkbox {...label} defaultChecked />
+              {childrenThree}
               <img
                 style={{
                   width: 130,
@@ -329,9 +378,7 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <AntSwitch
-                    inputProps={{ "aria-label": "ant design" }}
-                  />
+                  <AntSwitch inputProps={{ "aria-label": "ant design" }} />
                 </Stack>
                 <DeleteIcon
                   className="single-icon"
