@@ -93,7 +93,7 @@ const JobTitle = () => {
         "& + .MuiSwitch-track": {
           opacity: 1,
           backgroundColor:
-            theme.palette.mode === "dark" ? "#177ddc" : "#1890ff",
+            theme.palette.mode === "dark" ? "#177ddc" : "black",
         },
       },
     },
@@ -194,8 +194,8 @@ const JobTitle = () => {
                   <p style={{ fontSize: 13 }}>13 oct 2022</p>
                 </div>
                 <div>
-                  <button>FULL TIME</button>
-                  <button>Active</button>
+                  <button className="full-active">FULL TIME</button>
+                  <button className="full-active">Active</button>
                 </div>
               </div>
               <div>
@@ -277,8 +277,8 @@ const JobTitle = () => {
                   <p style={{ fontSize: 13 }}>13 oct 2022</p>
                 </div>
                 <div>
-                  <button>FULL TIME</button>
-                  <button>Active</button>
+                  <button className="full-active">FULL TIME</button>
+                  <button className="full-active">Active</button>
                 </div>
               </div>
               <div>
@@ -362,8 +362,8 @@ const JobTitle = () => {
                   <p style={{ fontSize: 13 }}>13 oct 2022</p>
                 </div>
                 <div>
-                  <button>FULL TIME</button>
-                  <button>Active</button>
+                  <button className="full-active">FULL TIME</button>
+                  <button className="full-active">Active</button>
                 </div>
               </div>
               <div>

@@ -18,6 +18,7 @@ import LanguageOutlined from "@mui/icons-material/LanguageOutlined";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import SidebarHome from "../SidebarHome/SidebarHome";
+import { Badge } from "@mui/material";
 
 const drawerWidth = 290;
 
@@ -95,7 +96,15 @@ const DrawerNav = () => {
             </IconButton>
             <div style={{ color: "green" }} className="page-nav">
               <div>
-                <h2 style={{ display: "inline-block", fontWeight: 600, width: 200 }}>Job Management</h2>
+                <h2
+                  style={{
+                    display: "inline-block",
+                    fontWeight: 600,
+                    width: 200,
+                  }}
+                >
+                  Job Management
+                </h2>
               </div>
 
               <div className="page-nav-icons">
@@ -103,11 +112,22 @@ const DrawerNav = () => {
                   <SearchIcon />
                   <input type="text" />
                 </div>
-                <NotificationActiveIcon
-                  style={{ marginRight: 40, marginLeft: 20 }}
+                <Badge color="secondary" badgeContent={13}>
+                  <NotificationActiveIcon
+                    className="nav-icon"
+                    style={{ marginRight: 40, marginLeft: 20 }}
+                  />
+                </Badge>
+                <Badge color="secondary" badgeContent={3}>
+                  <MailOutlineSharp
+                    className="nav-icon"
+                    style={{ marginRight: 40 }}
+                  />
+                </Badge>
+                <LanguageOutlined
+                  className="nav-icon"
+                  style={{ marginRight: 40 }}
                 />
-                <MailOutlineSharp style={{ marginRight: 40 }} />
-                <LanguageOutlined style={{ marginRight: 40 }} />
               </div>
             </div>
           </Toolbar>

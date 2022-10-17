@@ -11,6 +11,10 @@
   float: right;
   margin-left: 100%;
 }
+.nav-icon:hover{
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
 .nav_search {
   padding: 20px 5px;
   display: flex;
