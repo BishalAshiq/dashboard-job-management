@@ -160,7 +160,6 @@ const JobTitle = () => {
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
                   <AntSwitch
-                    defaultChecked
                     inputProps={{ "aria-label": "ant design" }}
                   />
                 </Stack>
@@ -331,7 +330,6 @@ const JobTitle = () => {
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
                   <AntSwitch
-                    defaultChecked
                     inputProps={{ "aria-label": "ant design" }}
                   />
                 </Stack>
