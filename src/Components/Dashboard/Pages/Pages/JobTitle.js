@@ -100,7 +100,7 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
+                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
                 <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
@@ -174,7 +174,7 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
+                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
                 <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
@@ -248,7 +248,7 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon style={{ width: 40, height: 32, color: "red" }} />
+                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
                 <Inventory2OutlinedIcon className="single-icon"
                   style={{ width: 40, height: 29, color: "green" }}
                 />
