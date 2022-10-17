@@ -95,7 +95,8 @@
   margin-top: -40px;
 }
 .title-icon {
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
   float: right;
   margin-right: 30px;
   align-items: center;

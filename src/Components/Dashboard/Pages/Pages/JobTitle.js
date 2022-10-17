@@ -16,6 +16,9 @@ import t3 from "../../../../Images/t-3.jpg";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import ToggleOnOutlinedIcon from "@mui/icons-material/ToggleOnOutlined";
 import RemoveRedEyeRoundedIcon from "@mui/icons-material/RemoveRedEyeRounded";
+import { AntSwitch, Stack } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Switch from "@mui/material/Switch";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
@@ -25,6 +28,52 @@ const JobTitle = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const AntSwitch = styled(Switch)(({ theme }) => ({
+    width: 28,
+    height: 16,
+    padding: 0,
+    display: "flex",
+    "&:active": {
+      "& .MuiSwitch-thumb": {
+        width: 15,
+      },
+      "& .MuiSwitch-switchBase.Mui-checked": {
+        transform: "translateX(9px)",
+      },
+    },
+    "& .MuiSwitch-switchBase": {
+      padding: 2,
+      "&.Mui-checked": {
+        transform: "translateX(12px)",
+        color: "#fff",
+        "& + .MuiSwitch-track": {
+          opacity: 1,
+          backgroundColor:
+            theme.palette.mode === "dark" ? "#177ddc" : "#1890ff",
+        },
+      },
+    },
+    "& .MuiSwitch-thumb": {
+      boxShadow: "0 2px 4px 0 rgb(0 35 11 / 20%)",
+      width: 12,
+      height: 12,
+      borderRadius: 6,
+      transition: theme.transitions.create(["width"], {
+        duration: 200,
+      }),
+    },
+    "& .MuiSwitch-track": {
+      borderRadius: 16 / 2,
+      opacity: 1,
+      backgroundColor:
+        theme.palette.mode === "dark"
+          ? "rgba(255,255,255,.35)"
+          : "rgba(0,0,0,.25)",
+      boxSizing: "border-box",
+    },
+  }));
+
   return (
     <Container className="Title-Jobs">
       <section style={{ paddingBottom: 40 }}>
@@ -42,11 +91,21 @@ const JobTitle = () => {
           </Tabs>
         </div>
         <div className="tab-icon">
-          <DeleteIcon className="single-icon"  style={{ width: 23, height: 33, color: "red", marginRight:10 }} />
-          <Inventory2OutlinedIcon className="single-icon"
-            style={{ width: 23, height: 33, color: "rgb(124, 124, 124)", marginRight:10 }}
+          <DeleteIcon
+            className="single-icon"
+            style={{ width: 23, height: 33, color: "red", marginRight: 10 }}
           />
-          <MobileFriendlyOutlinedIcon className="single-icon"
+          <Inventory2OutlinedIcon
+            className="single-icon"
+            style={{
+              width: 23,
+              height: 33,
+              color: "rgb(124, 124, 124)",
+              marginRight: 10,
+            }}
+          />
+          <MobileFriendlyOutlinedIcon
+            className="single-icon"
             style={{ width: 23, height: 33, color: "green" }}
           />
         </div>
@@ -99,12 +158,23 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon className="single-icon"
+                <Stack direction="row" spacing={1} alignItems="center">
+                  <AntSwitch
+                    defaultChecked
+                    inputProps={{ "aria-label": "ant design" }}
+                  />
+                </Stack>
+
+                <DeleteIcon
+                  className="single-icon"
+                  style={{ width: 40, height: 32, color: "red" }}
+                />
+                <Inventory2OutlinedIcon
+                  className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
-                <MobileFriendlyOutlinedIcon className="single-icon"
+                <MobileFriendlyOutlinedIcon
+                  className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -112,7 +182,8 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon className="single-icon"
+                <RemoveRedEyeRoundedIcon
+                  className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
@@ -173,12 +244,22 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon className="single-icon"
+                <Stack direction="row" spacing={1} alignItems="center">
+                  <AntSwitch
+                    defaultChecked
+                    inputProps={{ "aria-label": "ant design" }}
+                  />
+                </Stack>
+                <DeleteIcon
+                  className="single-icon"
+                  style={{ width: 40, height: 32, color: "red" }}
+                />
+                <Inventory2OutlinedIcon
+                  className="single-icon"
                   style={{ width: 40, height: 29, color: "rgb(124, 124, 124)" }}
                 />
-                <MobileFriendlyOutlinedIcon className="single-icon"
+                <MobileFriendlyOutlinedIcon
+                  className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -186,7 +267,8 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon className="single-icon"
+                <RemoveRedEyeRoundedIcon
+                  className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
@@ -247,12 +329,22 @@ const JobTitle = () => {
             </Grid>
             <Grid item xs>
               <div className="title-icon">
-                <ToggleOnOutlinedIcon className="single-icon" />
-                <DeleteIcon className="single-icon" style={{ width: 40, height: 32, color: "red" }} />
-                <Inventory2OutlinedIcon className="single-icon"
+                <Stack direction="row" spacing={1} alignItems="center">
+                  <AntSwitch
+                    defaultChecked
+                    inputProps={{ "aria-label": "ant design" }}
+                  />
+                </Stack>
+                <DeleteIcon
+                  className="single-icon"
+                  style={{ width: 40, height: 32, color: "red" }}
+                />
+                <Inventory2OutlinedIcon
+                  className="single-icon"
                   style={{ width: 40, height: 29, color: "green" }}
                 />
-                <MobileFriendlyOutlinedIcon className="single-icon"
+                <MobileFriendlyOutlinedIcon
+                  className="single-icon"
                   style={{
                     width: 40,
                     height: 29,
@@ -260,7 +352,8 @@ const JobTitle = () => {
                     marginRight: 10,
                   }}
                 />
-                <RemoveRedEyeRoundedIcon className="single-icon"
+                <RemoveRedEyeRoundedIcon
+                  className="single-icon"
                   style={{
                     borderRadius: "100%",
                     width: 40,
