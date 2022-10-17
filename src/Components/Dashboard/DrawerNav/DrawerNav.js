@@ -12,13 +12,12 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Pages from "../Pages/Pages/Pages";
 import SearchIcon from "@mui/icons-material/Search";
-import NotificationActiveIcon from "@mui/icons-material/NotificationsActive";
-import MailOutlineSharp from "@mui/icons-material/MailOutlineSharp";
-import LanguageOutlined from "@mui/icons-material/LanguageOutlined";
+import MarkChatUnreadOutlinedIcon from "@mui/icons-material/MarkChatUnreadOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import SidebarHome from "../SidebarHome/SidebarHome";
-import { Badge } from "@mui/material";
 
 const drawerWidth = 290;
 
@@ -110,21 +109,18 @@ const DrawerNav = () => {
               <div className="page-nav-icons">
                 <div className="nav_search">
                   <SearchIcon />
-                  <input type="text" />
+                  <input type="text" placeholder="Search" />
                 </div>
-                <Badge color="secondary" badgeContent={13}>
-                  <NotificationActiveIcon
-                    className="nav-icon"
-                    style={{ marginRight: 40, marginLeft: 20 }}
-                  />
-                </Badge>
-                <Badge color="secondary" badgeContent={3}>
-                  <MailOutlineSharp
-                    className="nav-icon"
-                    style={{ marginRight: 40 }}
-                  />
-                </Badge>
-                <LanguageOutlined
+
+                <MarkChatUnreadOutlinedIcon
+                  className="nav-icon"
+                  style={{ marginRight: 40, marginLeft: 20 }}
+                />
+                <EmailOutlinedIcon
+                  className="nav-icon"
+                  style={{ marginRight: 40 }}
+                />
+                <TranslateOutlinedIcon
                   className="nav-icon"
                   style={{ marginRight: 40 }}
                 />

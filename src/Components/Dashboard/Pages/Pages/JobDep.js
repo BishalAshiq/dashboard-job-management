@@ -11,56 +11,63 @@ const JobDep = () => {
       <Container>
         <section className="job-type-sec">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={8}>
+            <Grid item xs={6} md={8} style={{ marginTop: 30 }}>
               <div>
                 <h2
                   style={{
                     color: "rgb(7, 177, 7)",
-                    marginRight: "440px",
+                    float: "left",
                     fontWeight: 500,
                   }}
                 >
                   Job Type
-                </h2>
-                <div className="job-types">
-                  <div className="job-type">
-                    <h5 style={{ fontWeight: 400 }}>Parmanent</h5>
-                    <CloseIcon style={{ width: 30 }} />
-                  </div>
-                  <div className="job-type">
-                    <h5 style={{ fontWeight: 400 }}>Part Time</h5>
-                    <CloseIcon style={{ width: 30 }} />
-                  </div>
-                  <div className="job-type">
-                    <h5 style={{ fontWeight: 400 }}>Contractual</h5>
-                    <CloseIcon style={{ width: 30 }} />
-                  </div>
-                  <div className="button">
-                    <button
-                      style={{
-                        backgroundColor: "green",
-                        border: "none",
-                        color: "white",
-                      }}
-                    >
-                      Add New
-                    </button>
-                    <AddIcon style={{ color: "white" }} />
-                  </div>
+                </h2>{" "}
+                <br />
+                <br />
+                <br />
+              </div>
+              <div className="job-types">
+                <div className="job-type" style={{ marginLeft: -97 }}>
+                  <h5 style={{ fontWeight: 400 }}>Parmanent</h5>
+                  <CloseIcon style={{ width: 30 }} />
+                </div>
+                <div className="job-type">
+                  <h5 style={{ fontWeight: 400 }}>Part Time</h5>
+                  <CloseIcon style={{ width: 30 }} />
+                </div>
+                <div className="job-type">
+                  <h5 style={{ fontWeight: 400 }}>Contractual</h5>
+                  <CloseIcon style={{ width: 30 }} />
+                </div>
+                <div className="button">
+                  <button
+                    style={{
+                      backgroundColor: "green",
+                      border: "none",
+                      color: "white",
+                    }}
+                  >
+                    Add New
+                  </button>
+                  <AddIcon style={{ color: "white" }} />
                 </div>
               </div>
               <div>
                 <h2
                   style={{
                     color: "rgb(7, 177, 7)",
-                    marginRight: "400px",
+                    float: "left",
                     fontWeight: 500,
+                    marginLeft: 4,
                   }}
                 >
                   Department
-                </h2>
+                </h2>{" "}
+                <br />
+                <br />
+                <br />
                 <div className="dep-types">
-                  <div className="dep-type">
+                  <div className="dep-type" style={{ marginLeft: -127 }}>
                     <h5 style={{ fontWeight: 400 }}>HR & Admin</h5>
                     <CloseIcon style={{ width: 30 }} />
                   </div>
@@ -88,13 +95,27 @@ const JobDep = () => {
               <div className="available">
                 <div>
                   <h3 style={{ color: "white", fontSize: 25 }}>33</h3>
-                  <p style={{ marginTop: "-20px", color: "white", fontWeight: 300 }}>
+                  <p
+                    style={{
+                      marginTop: "-20px",
+                      color: "white",
+                      fontWeight: 300,
+                    }}
+                  >
                     Available
                   </p>
                 </div>
                 <div>
                   <h3 style={{ color: "white", fontSize: 25 }}>08</h3>
-                  <p style={{ marginTop: "-20px", color: "white", fontWeight: 300 }}>Pending</p>
+                  <p
+                    style={{
+                      marginTop: "-20px",
+                      color: "white",
+                      fontWeight: 300,
+                    }}
+                  >
+                    Pending
+                  </p>
                 </div>
                 <div>
                   <Button

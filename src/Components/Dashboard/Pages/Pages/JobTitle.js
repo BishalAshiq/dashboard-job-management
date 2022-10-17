@@ -48,21 +48,21 @@ const JobTitle = () => {
   const childrenOne = (
     <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
       <FormControlLabel
-        control={<Checkbox checked={checked[0]} onChange={handleChange2} />}
+        control={<Checkbox color="default" checked={checked[0]} onChange={handleChange2} />}
       />
     </Box>
   );
   const childrenTwo = (
     <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
       <FormControlLabel
-        control={<Checkbox checked={checked[1]} onChange={handleChange3} />}
+        control={<Checkbox color="default" checked={checked[1]} onChange={handleChange3} />}
       />
     </Box>
   );
   const childrenThree = (
     <Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
       <FormControlLabel
-        control={<Checkbox checked={checked[1]} onChange={handleChange4} />}
+        control={<Checkbox color="default" checked={checked[1]} onChange={handleChange4} />}
       />
     </Box>
   );
@@ -92,8 +92,7 @@ const JobTitle = () => {
         color: "#fff",
         "& + .MuiSwitch-track": {
           opacity: 1,
-          backgroundColor:
-            theme.palette.mode === "dark" ? "#177ddc" : "black",
+          backgroundColor: theme.palette.mode === "dark" ? "#177ddc" : "black",
         },
       },
     },
@@ -119,7 +118,7 @@ const JobTitle = () => {
 
   return (
     <Container className="Title-Jobs">
-      <section style={{ paddingBottom: 40 }}>
+      <section style={{ paddingBottom: 40, borderBottom: "1px solid gray", marginTop: 20 }}>
         <div className="job-title">
           <Tabs
             value={value}
@@ -129,6 +128,7 @@ const JobTitle = () => {
             <FormControlLabel
               control={
                 <Checkbox
+                  color="default"
                   checked={checked[0] && checked[1]}
                   indeterminate={checked[0] !== checked[1]}
                   onChange={handleChange1}
