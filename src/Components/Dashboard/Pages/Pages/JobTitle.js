@@ -239,7 +239,9 @@ const JobTitle = () => {
             <Grid item xs>
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <AntSwitch inputProps={{ "aria-label": "ant design" }} />
+                  <AntSwitch 
+                  defaultChecked
+                  inputProps={{ "aria-label": "ant design" }} />
                 </Stack>
 
                 <DeleteIcon
@@ -327,7 +329,6 @@ const JobTitle = () => {
               <div className="title-icon">
                 <Stack direction="row" spacing={1} alignItems="center">
                   <AntSwitch
-                    defaultChecked
                     inputProps={{ "aria-label": "ant design" }}
                   />
                 </Stack>
