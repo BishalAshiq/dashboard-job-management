@@ -93,7 +93,7 @@ const DrawerNav = () => {
             >
               <MenuIcon />
             </IconButton>
-            <div style={{ color: "green" }} className="page-nav">
+            <div style={{ color: "rgb(5, 154, 84)" }} className="page-nav">
               <div>
                 <h2
                   style={{
@@ -143,7 +143,7 @@ const DrawerNav = () => {
         >
           <DrawerHeader
             style={{
-              backgroundColor: "Green",
+              backgroundColor: "rgb(5, 154, 84)",
             }}
           >
             <div className="sidebar-tops">

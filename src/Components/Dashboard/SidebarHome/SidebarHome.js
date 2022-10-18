@@ -37,13 +37,13 @@ const SidebarHome = () => {
               justifyContent: "space-evenly",
               alignItems: "center",
               textAlign: "center",
-              backgroundColor: "green",
+              backgroundColor: "rgb(5, 154, 84)",
             }}
           >
             <AccountCircleOutlinedIcon
-              style={{ marginRight: 4, color: "white", marginRight:-20 }}
+              style={{ color: "white", marginRight:-20 }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400  }}>User Management</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500  }}>User Management</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -74,7 +74,7 @@ const SidebarHome = () => {
             }}
           >
             <StickyNote2OutlinedIcon style={{ marginRight: 4, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
               Notice & News Management
             </h4>
             <KeyboardArrowDownOutlinedIcon
@@ -104,12 +104,12 @@ const SidebarHome = () => {
               justifyContent: "space-evenly",
               alignItems: "center",
               textAlign: "center",
-              backgroundColor: "#003300",
+              backgroundColor: "#25583C",
               borderRadius: 5,
             }}
           >
             <DeviceHubOutlinedIcon style={{ marginRight: -20, color: "#C3ABAB" }} />
-            <h4 style={{ marginRight: 4, color: "#C3ABAB" }}>Job Management</h4>
+            <h4 style={{ marginRight: 4, color: "#DDD2D2", fontWeight: 500 }}>Job Management</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -140,7 +140,7 @@ const SidebarHome = () => {
             }}
           >
             <LibraryBooksOutlinedIcon style={{ marginRight: -20, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Blogs & article</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Blogs & article</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -174,7 +174,7 @@ const SidebarHome = () => {
             <CelebrationOutlinedIcon
               style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Advertisement</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Advertisement</h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -206,18 +206,18 @@ const SidebarHome = () => {
             <CelebrationOutlinedIcon
               style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 400 }}>Miscillenious</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Miscillenious</h4>
             <AddOutlinedIcon style={{ marginRight: 4, color: "white" }} />
           </div>
           <div
             style={{
-              backgroundColor: "#003300",
+              backgroundColor: "#25583C",
               display: "flex",
               alignItems: "center",
             }}
           >
-            <TuneRoundedIcon style={{ marginLeft: 80, color: "white" }} />
-            <h4 style={{ marginLeft: 10, color: "white" }}>Setting</h4>
+            <TuneRoundedIcon style={{ marginLeft: 38, color: "white" }} />
+            <h4 style={{ marginLeft: 14, color: "white", fontWeight: 500 }}>Settings</h4>
           </div>
         </section>
       </div>

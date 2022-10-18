@@ -16,7 +16,7 @@ const JobDep = () => {
               <div>
                 <h2
                   style={{
-                    color: "rgb(7, 177, 7)",
+                    color: "rgb(5, 154, 84)",
                     float: "left",
                     fontWeight: 500,
                   }}
@@ -43,7 +43,7 @@ const JobDep = () => {
                 <div className="button">
                   <button
                     style={{
-                      backgroundColor: "green",
+                      backgroundColor: "rgb(5, 154, 84)",
                       border: "none",
                       color: "white",
                     }}
@@ -56,7 +56,7 @@ const JobDep = () => {
               <div>
                 <h2
                   style={{
-                    color: "rgb(7, 177, 7)",
+                    color: "rgb(5, 154, 84)",
                     float: "left",
                     fontWeight: 500,
                     marginLeft: 4,
@@ -79,9 +79,10 @@ const JobDep = () => {
                   <div className="button">
                     <button
                       style={{
-                        backgroundColor: "green",
+                        backgroundColor: "rgb(5, 154, 84)",
                         border: "none",
                         color: "white",
+                        
                       }}
                     >
                       Add New
@@ -121,8 +122,7 @@ const JobDep = () => {
                 <div>
                   <Button
                     variant="contained"
-                    color="success"
-                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase" }}
+                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 12 }}
                   >
                     <AddOutlinedIcon style={{width: 16}}/>
                     Create a job

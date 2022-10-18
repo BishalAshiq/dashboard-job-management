@@ -1,5 +1,5 @@
 .sidebar-home {
-  background-color: green;
+  background-color: rgb(5, 154, 84);
   display: flex;
   align-items: center;
   text-align: center;
@@ -7,14 +7,14 @@
   color: rgb(247, 243, 238);
 }
 .sidebar-accordion {
-  background-color: green;
+  background-color: rgb(5, 154, 84);
   border-bottom: none;
 }
 .accordion-item {
-  background-color: green;
+  background-color: rgb(5, 154, 84);
 }
 .side-search-sec {
-  background-color: green;
+  background-color: rgb(5, 154, 84);
   padding: 20px 20px;
 }
 .side_search {
@@ -24,7 +24,7 @@
   border-radius: 17px;
   height: 22px;
   color: gray;
-  background-color: green;
+  background-color: rgb(5, 154, 84);
   border: 1px solid rgb(254, 253, 253);
   /* margin: 10px 35px; */
 }
