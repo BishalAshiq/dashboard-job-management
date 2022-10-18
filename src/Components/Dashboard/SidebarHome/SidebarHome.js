@@ -1,15 +1,15 @@
 import React from "react";
 import "./SidebarHome.css";
-import HomeIcon from "@mui/icons-material/Home";
+import RoofingOutlinedIcon from "@mui/icons-material/RoofingOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
+import StickyNote2OutlinedIcon from "@mui/icons-material/StickyNote2Outlined";
 import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
-import DeviceHubOutlinedIcon from '@mui/icons-material/DeviceHubOutlined';
+import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
+import DeviceHubOutlinedIcon from "@mui/icons-material/DeviceHubOutlined";
 import { Container } from "@mui/system";
 
 const SidebarHome = () => {
@@ -23,14 +23,14 @@ const SidebarHome = () => {
       </Container>
 
       <section className="sidebar-home">
-        <HomeIcon
+        <RoofingOutlinedIcon
           style={{ width: 30, marginLeft: 15, color: "rgb(247, 243, 238)" }}
         />
-        <h3 style={{fontWeight: 400, fontSize:18, paddingTop: 5}}>Home</h3>
+        <h3 style={{ fontWeight: 400, fontSize: 15, paddingTop: 5 }}>Home</h3>
       </section>
 
       <div>
-        <section className="accordion-item" style={{marginTop:-20}}>
+        <section className="accordion-item" style={{ marginTop: -20 }}>
           <div
             style={{
               display: "flex",
@@ -41,14 +41,16 @@ const SidebarHome = () => {
             }}
           >
             <AccountCircleOutlinedIcon
-              style={{ color: "white", marginRight:-20 }}
+              style={{ color: "white", marginRight: -20 }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500  }}>User Management</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
+              User Management
+            </h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
+          <div style={{ paddingLeft: "50px", marginTop: -10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -64,7 +66,7 @@ const SidebarHome = () => {
             </unl>
           </div>
         </section>
-        <section className="accordion-item" style={{paddingBottom: 20}}>
+        <section className="accordion-item" style={{ paddingBottom: 20 }}>
           <div
             style={{
               display: "flex",
@@ -73,7 +75,9 @@ const SidebarHome = () => {
               textAlign: "center",
             }}
           >
-            <StickyNote2OutlinedIcon style={{ marginRight: 4, color: "white" }} />
+            <StickyNote2OutlinedIcon
+              style={{ marginRight: 4, color: "white" }}
+            />
             <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
               Notice & News Management
             </h4>
@@ -81,7 +85,7 @@ const SidebarHome = () => {
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
+          <div style={{ paddingLeft: "50px", marginTop: -10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -108,8 +112,12 @@ const SidebarHome = () => {
               borderRadius: 5,
             }}
           >
-            <DeviceHubOutlinedIcon style={{ marginRight: -20, color: "#C3ABAB" }} />
-            <h4 style={{ marginRight: 4, color: "#DDD2D2", fontWeight: 500 }}>Job Management</h4>
+            <DeviceHubOutlinedIcon
+              style={{ marginRight: -20, color: "#C3ABAB" }}
+            />
+            <h4 style={{ marginRight: 4, color: "#DDD2D2", fontWeight: 500 }}>
+              Job Management
+            </h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
@@ -139,14 +147,17 @@ const SidebarHome = () => {
               textAlign: "center",
             }}
           >
-            <LibraryBooksOutlinedIcon style={{ marginRight: -20, color: "white" }} />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Blogs & article</h4>
+            <LibraryBooksOutlinedIcon
+              style={{ marginRight: -20, color: "white" }}
+            />
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
+              Blogs & article
+            </h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px", 
-                marginTop:-10 }}>
+          <div style={{ paddingLeft: "50px", marginTop: -10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -174,12 +185,14 @@ const SidebarHome = () => {
             <CelebrationOutlinedIcon
               style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Advertisement</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
+              Advertisement
+            </h4>
             <KeyboardArrowDownOutlinedIcon
               style={{ marginRight: 4, color: "white" }}
             />
           </div>
-          <div style={{ paddingLeft: "50px", marginTop:-10 }}>
+          <div style={{ paddingLeft: "50px", marginTop: -10 }}>
             <unl
               style={{
                 textAlign: "justify",
@@ -206,7 +219,9 @@ const SidebarHome = () => {
             <CelebrationOutlinedIcon
               style={{ marginRight: -20, color: "white" }}
             />
-            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>Miscillenious</h4>
+            <h4 style={{ marginRight: 4, color: "white", fontWeight: 500 }}>
+              Miscillenious
+            </h4>
             <AddOutlinedIcon style={{ marginRight: 4, color: "white" }} />
           </div>
           <div
@@ -217,7 +232,9 @@ const SidebarHome = () => {
             }}
           >
             <TuneRoundedIcon style={{ marginLeft: 38, color: "white" }} />
-            <h4 style={{ marginLeft: 14, color: "white", fontWeight: 500 }}>Settings</h4>
+            <h4 style={{ marginLeft: 14, color: "white", fontWeight: 500 }}>
+              Settings
+            </h4>
           </div>
         </section>
       </div>

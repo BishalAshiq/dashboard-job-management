@@ -47,13 +47,15 @@
   width: 50px;
 }
 .sidebar-text h4 {
-  color: antiquewhite;
+  color: whitesmoke;
+  font-weight: 450;
   align-items: center;
   text-align: center;
 }
 .sidebar-text h6 {
   margin-top: -20px;
-  color: antiquewhite;
+  color: whitesmoke;
+  font-weight: 450;
   align-items: center;
   text-align: center;
   text-align: justify;

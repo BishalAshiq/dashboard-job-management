@@ -7,6 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -163,9 +164,9 @@ const DrawerNav = () => {
             </div>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
-                <ChevronLeftIcon />
+                <LogoutOutlinedIcon style={{ color: "white" }} />
               ) : (
-                <ChevronRightIcon />
+                <LogoutOutlinedIcon style={{ color: "white" }} />
               )}
             </IconButton>
           </DrawerHeader>
