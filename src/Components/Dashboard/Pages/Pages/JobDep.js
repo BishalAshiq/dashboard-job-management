@@ -122,7 +122,7 @@ const JobDep = () => {
                 <div>
                   <Button
                     variant="contained"
-                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 12 }}
+                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 8 }}
                   >
                     <AddOutlinedIcon style={{width: 16}}/>
                     Create a job
