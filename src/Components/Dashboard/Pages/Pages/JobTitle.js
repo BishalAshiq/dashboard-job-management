@@ -196,16 +196,15 @@ const JobTitle = () => {
                 display: "flex",
                 alignItems: "center",
                 textAlign: "center",
-                marginLeft: 20,
               }}
             >
               {childrenOne}
               <img
                 style={{
                   width: 130,
-                  height: 50,
+                  height: 60,
                   marginLeft: 20,
-                  borderRadius: 5,
+                  borderRadius: 3,
                 }}
                 src={t1}
                 alt=""
@@ -219,7 +218,7 @@ const JobTitle = () => {
                 </div>
                 <div>
                   <button className="full-active">FULL TIME</button>
-                  <button className="full-active">Active</button>
+                  <button className="full-active">ACTIVE</button>
                 </div>
               </div>
               <div>
@@ -230,6 +229,12 @@ const JobTitle = () => {
                   DescriptionJob DescriptionJob DescriptionJob Description
                 </p>
               </div>
+              <div className="title-footers">
+                  <p className="title-footer">HR & Admin</p>
+                  <p className="title-footer">RMG</p>
+                  <p className="title-footer">Time keeper</p>
+                </div>
+              
             </Grid>
             <Grid item xs>
               <div className="title-icon">
@@ -279,14 +284,13 @@ const JobTitle = () => {
                 display: "flex",
                 alignItems: "center",
                 textAlign: "center",
-                marginLeft: 20,
               }}
             >
               {childrenTwo}
               <img
                 style={{
                   width: 130,
-                  height: 50,
+                  height: 60,
                   marginLeft: 20,
                   borderRadius: 5,
                 }}
@@ -302,7 +306,7 @@ const JobTitle = () => {
                 </div>
                 <div>
                   <button className="full-active">FULL TIME</button>
-                  <button className="full-active">Active</button>
+                  <button className="full-active" style={{backgroundColor: "red"}}>INACTIVE</button>
                 </div>
               </div>
               <div>
@@ -313,6 +317,11 @@ const JobTitle = () => {
                   DescriptionJob DescriptionJob DescriptionJob Description
                 </p>
               </div>
+              <div className="title-footers">
+                  <p className="title-footer">HR & Admin</p>
+                  <p className="title-footer">RMG</p>
+                  <p className="title-footer">Time keeper</p>
+                </div>
             </Grid>
             <Grid item xs>
               <div className="title-icon">
@@ -364,14 +373,13 @@ const JobTitle = () => {
                 display: "flex",
                 alignItems: "center",
                 textAlign: "center",
-                marginLeft: 20,
               }}
             >
               {childrenThree}
               <img
                 style={{
                   width: 130,
-                  height: 50,
+                  height: 60,
                   marginLeft: 20,
                   borderRadius: 5,
                 }}
@@ -387,7 +395,7 @@ const JobTitle = () => {
                 </div>
                 <div>
                   <button className="full-active">FULL TIME</button>
-                  <button className="full-active">Active</button>
+                  <button className="full-active" style={{backgroundColor: "gray"}}>ARCHIVED</button>
                 </div>
               </div>
               <div>
@@ -398,6 +406,11 @@ const JobTitle = () => {
                   DescriptionJob DescriptionJob DescriptionJob Description
                 </p>
               </div>
+              <div className="title-footers">
+                  <p className="title-footer">HR & Admin</p>
+                  <p className="title-footer">RMG</p>
+                  <p className="title-footer">Time keeper</p>
+                </div>
             </Grid>
             <Grid item xs>
               <div className="title-icon">
