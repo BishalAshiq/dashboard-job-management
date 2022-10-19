@@ -265,9 +265,9 @@ const JobTitle = () => {
                   className="single-icon"
                   style={{
                     borderRadius: "100%",
-                    width: 40,
-                    height: 37,
-                    padding: 5,
+                    width: 38,
+                    height: 35,
+                    padding: 4,
                     boxShadow: "1px 1px 30px -8px",
                     color: "rgb(124, 124, 124)",
                   }}
@@ -353,9 +353,9 @@ const JobTitle = () => {
                   className="single-icon"
                   style={{
                     borderRadius: "100%",
-                    width: 40,
-                    height: 37,
-                    padding: 5,
+                    width: 38,
+                    height: 35,
+                    padding: 4,
                     boxShadow: "1px 1px 30px -8px",
                     color: "gray",
                   }}
@@ -439,9 +439,9 @@ const JobTitle = () => {
                   className="single-icon"
                   style={{
                     borderRadius: "100%",
-                    width: 40,
-                    height: 37,
-                    padding: 5,
+                    width: 38,
+                    height: 35,
+                    padding: 4,
                     boxShadow: "1px 1px 30px -8px",
                     color: "rgb(124, 124, 124)",
                   }}
