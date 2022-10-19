@@ -95,25 +95,27 @@ const JobDep = () => {
 
             <Grid item xs={6} md={4}>
               <div className="available">
-                <div>
-                  <h3 style={{ color: "white", fontSize: 40, marginTop: 10 }}>33</h3>
+                <div style={{}}>
+                  <h3 style={{ color: "white", fontSize: 40, marginTop: 10, marginLeft: 130 }}>33</h3>
                   <p
                     style={{
                       marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
+                      marginLeft: 124
                     }}
                   >
                     Available
                   </p>
                 </div>
                 <div>
-                  <h3 style={{ color: "white", fontSize: 40, marginTop: -10 }}>08</h3>
+                  <h3 style={{ color: "white", fontSize: 40, marginTop: -10, marginLeft: 130 }}>08</h3>
                   <p
                     style={{
                       marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
+                      marginLeft: 124
                     }}
                   >
                     Pendings
@@ -122,7 +124,7 @@ const JobDep = () => {
                 <div>
                   <Button
                     variant="contained"
-                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 8 }}
+                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 8, marginLeft: 85 }}
                   >
                     <AddOutlinedIcon style={{width: 16}}/>
                     Create a job
