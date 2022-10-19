@@ -99,7 +99,7 @@ const DrawerNav = () => {
                     display: "inline-block",
                     fontWeight: 600,
                     width: 200,
-                    marginLeft: 80,
+                    marginLeft: 10,
                   }}
                 >
                   Job Management
