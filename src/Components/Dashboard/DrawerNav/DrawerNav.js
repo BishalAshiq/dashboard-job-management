@@ -18,7 +18,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import SidebarHome from "../SidebarHome/SidebarHome";
 
-const drawerWidth = 290;
+const drawerWidth = 300;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({
@@ -99,6 +99,7 @@ const DrawerNav = () => {
                     display: "inline-block",
                     fontWeight: 600,
                     width: 200,
+                    marginLeft: 80,
                   }}
                 >
                   Job Management
