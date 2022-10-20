@@ -65,3 +65,16 @@ body{
   text-align: center;
   text-align: justify;
 }
+
+
+
+/* Responsive */
+@media screen and (min-width:1367px){
+    .page-nav-icons{
+      margin-left: 610px;
+    }
+    .menuIcon-toggle{
+      margin-right: 270px;
+      
+    }
+}

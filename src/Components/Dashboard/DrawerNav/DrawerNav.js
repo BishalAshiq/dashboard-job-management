@@ -90,11 +90,12 @@ const DrawerNav = () => {
               edge="start"
               sx={{ mr: 2, ...(open && { display: "none" }) }}
             >
-              <MenuIcon />
+              <MenuIcon className="menuIcon-toggle"/>
             </IconButton>
             <div style={{ color: "rgb(5, 154, 84)" }} className="page-nav">
               <div>
                 <h2
+                  className="jobManage-h2"
                   style={{
                     display: "inline-block",
                     fontWeight: 600,
