@@ -60,6 +60,20 @@
   margin-right: -14px;
   background-color: rgb(5, 154, 84);
 }
+.available-Button{
+  font-weight: 400px;
+  font-size: 14;
+  background-color: rgb(5, 154, 84);
+  border: .8px solid whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px 0px 2px 0px;
+  margin: 0px 70px 0px 70px;
+}
+.available-Button Button{
+  color: white;
+  align-items: center;
+}
 
 /* Jobs Title */
 .Title-Jobs {
@@ -111,11 +125,10 @@
   padding-bottom: 50px;
   margin-top: 40px;
 }
-.title-footers{
+.title-footers {
   display: flex;
-  
 }
-.title-footer{
+.title-footer {
   background-color: rgb(246, 246, 246);
   color: rgb(144, 147, 149);
   border: hidden;
@@ -151,4 +164,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Button {
+    background-color: black;
+    margin-left: 96;
+  }
 }

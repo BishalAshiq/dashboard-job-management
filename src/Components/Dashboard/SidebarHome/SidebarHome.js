@@ -232,7 +232,10 @@ const SidebarHome = () => {
             }}
           >
             <TuneRoundedIcon style={{ marginLeft: 38, color: "white" }} />
-            <h4 style={{ marginLeft: 14, color: "white", fontWeight: 500 }}>
+            <h4
+              className="side-settings"
+              style={{ marginLeft: 14, color: "white", fontWeight: 500 }}
+            >
               Settings
             </h4>
           </div>

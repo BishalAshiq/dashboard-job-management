@@ -4,7 +4,7 @@ import { Button, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
 const JobDep = () => {
   return (
@@ -82,7 +82,6 @@ const JobDep = () => {
                         backgroundColor: "rgb(5, 154, 84)",
                         border: "none",
                         color: "white",
-                        
                       }}
                     >
                       Add New
@@ -96,37 +95,53 @@ const JobDep = () => {
             <Grid item xs={6} md={4}>
               <div className="available">
                 <div style={{}}>
-                  <h3 style={{ color: "white", fontSize: 40, marginTop: 10, textAlign:"center" }}>33</h3>
+                  <h3
+                    style={{
+                      color: "white",
+                      fontSize: 40,
+                      marginTop: 10,
+                      textAlign: "center",
+                    }}
+                  >
+                    33
+                  </h3>
                   <p
                     style={{
                       marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
-                      textAlign:"center"
+                      textAlign: "center",
                     }}
                   >
                     Available
                   </p>
                 </div>
                 <div>
-                  <h3 style={{ color: "white", fontSize: 40, marginTop: -10, textAlign:"center" }}>08</h3>
+                  <h3
+                    style={{
+                      color: "white",
+                      fontSize: 40,
+                      marginTop: -10,
+                      textAlign: "center",
+                    }}
+                  >
+                    08
+                  </h3>
                   <p
                     style={{
                       marginTop: "-50px",
                       color: "white",
                       fontWeight: 300,
-                      textAlign:"center"
+                      textAlign: "center",
                     }}
                   >
                     Pendings
                   </p>
                 </div>
-                <div>
+                <div className="available-Button">
                   <Button
-                    variant="contained"
-                    style={{ fontWeight: 400, fontSize: 14, type: "lowercase", backgroundColor: "rgb(5, 154, 84)", border: ".8px solid whiteSmoke", borderRadius: 8, marginLeft: 90 }}
                   >
-                    <AddOutlinedIcon style={{width: 16}}/>
+                    <AddOutlinedIcon style={{ width: 16 }} />
                     Create a job
                   </Button>
                 </div>

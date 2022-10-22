@@ -1,4 +1,4 @@
-body{
+body {
   overflow-x: hidden;
 }
 .page-nav {
@@ -13,12 +13,12 @@ body{
   justify-content: space-evenly;
   align-items: center;
   /* float: right; */
-  margin-left: 605px;
+  margin-left: 608px;
 }
-.nav-icon{
+.nav-icon {
   color: rgb(0, 80, 0);
 }
-.nav-icon:hover{
+.nav-icon:hover {
   cursor: pointer;
   transform: scale(1.2, 1.2);
 }
@@ -53,9 +53,7 @@ body{
   color: whitesmoke;
   font-weight: 450;
   align-items: center;
-  /* text-align: center; */
   width: 100px;
-  /* border: 1px solid gray; */
 }
 .sidebar-text h6 {
   margin-top: -20px;
@@ -66,15 +64,21 @@ body{
   text-align: justify;
 }
 
-
-
 /* Responsive */
-@media screen and (min-width:1367px){
-    .page-nav-icons{
-      margin-left: 610px;
-    }
-    .menuIcon-toggle{
-      margin-right: 270px;
-      
-    }
+
+/* Large devices ( big screen, 1367px and up) */
+@media screen and (min-width: 1367px) {
+  .page-nav-icons {
+    margin-left: 620px;
+  }
+  .menuIcon-toggle {
+    margin-right: 270px;
+  }
+}
+
+/* Medium devices ( tablets, 768px) */
+@media only screen and (max-width: 1024px) {
+  .page-nav-icons {
+    margin-left: 660px;
+  }
 }

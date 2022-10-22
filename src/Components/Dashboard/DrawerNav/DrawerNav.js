@@ -82,7 +82,10 @@ const DrawerNav = () => {
     <div>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="fixed" open={open} style={{ background: "#fff" }}>
+        <AppBar
+         position="fixed" 
+         open={open} 
+         style={{ background: "#fff" }}>
           <Toolbar>
             <IconButton
               aria-label="open drawer"
@@ -160,7 +163,6 @@ const DrawerNav = () => {
                 <h4>Anarul Islam</h4>
                 <h6>Admin</h6>
               </div>
-              <div className="sidebar-icon"></div>
             </div>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
@@ -175,8 +177,8 @@ const DrawerNav = () => {
             <SidebarHome></SidebarHome>
           </div>
         </Drawer>
-        <Main open={open}>
-          <DrawerHeader />
+        <Main open={open} >
+          <DrawerHeader/>
           <Pages />
         </Main>
       </Box>
