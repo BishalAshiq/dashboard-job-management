@@ -82,10 +82,7 @@ const DrawerNav = () => {
     <div>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar
-         position="fixed" 
-         open={open} 
-         style={{ background: "#fff" }}>
+        <AppBar position="fixed" open={open} style={{ background: "#fff" }}>
           <Toolbar>
             <IconButton
               aria-label="open drawer"
@@ -93,7 +90,7 @@ const DrawerNav = () => {
               edge="start"
               sx={{ mr: 2, ...(open && { display: "none" }) }}
             >
-              <MenuIcon className="menuIcon-toggle"/>
+              <MenuIcon className="menuIcon-toggle" />
             </IconButton>
             <div style={{ color: "rgb(5, 154, 84)" }} className="page-nav">
               <div>
@@ -177,8 +174,8 @@ const DrawerNav = () => {
             <SidebarHome></SidebarHome>
           </div>
         </Drawer>
-        <Main open={open} >
-          <DrawerHeader/>
+        <Main open={open}>
+          <DrawerHeader />
           <Pages />
         </Main>
       </Box>
