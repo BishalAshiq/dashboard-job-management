@@ -30,15 +30,15 @@ const JobDep = () => {
               <div className="job-types">
                 <div className="job-type" style={{ marginLeft: -97 }}>
                   <h5 style={{ fontWeight: 400 }}>Parmanent</h5>
-                  <CloseIcon style={{ width: 30 }} />
+                  <CloseIcon className="close-icon" style={{ width: 30 }} />
                 </div>
                 <div className="job-type">
                   <h5 style={{ fontWeight: 400 }}>Part Time</h5>
-                  <CloseIcon style={{ width: 30 }} />
+                  <CloseIcon className="close-icon" style={{ width: 30 }} />
                 </div>
                 <div className="job-type">
                   <h5 style={{ fontWeight: 400 }}>Contractual</h5>
-                  <CloseIcon style={{ width: 30 }} />
+                  <CloseIcon className="close-icon" style={{ width: 30 }} />
                 </div>
                 <div className="button">
                   <button
@@ -50,7 +50,7 @@ const JobDep = () => {
                   >
                     Add New
                   </button>
-                  <AddIcon style={{ color: "white" }} />
+                  <AddIcon className="add-icon" style={{ color: "white" }} />
                 </div>
               </div>
               <div>
@@ -70,11 +70,11 @@ const JobDep = () => {
                 <div className="dep-types">
                   <div className="dep-type" style={{ marginLeft: -127 }}>
                     <h5 style={{ fontWeight: 400 }}>HR & Admin</h5>
-                    <CloseIcon style={{ width: 30 }} />
+                    <CloseIcon className="close-icon" style={{ width: 30 }} />
                   </div>
                   <div className="dep-type">
                     <h5 style={{ fontWeight: 400 }}>Shipment</h5>
-                    <CloseIcon style={{ width: 30 }} />
+                    <CloseIcon className="close-icon" style={{ width: 30 }} />
                   </div>
                   <div className="button">
                     <button
@@ -86,7 +86,7 @@ const JobDep = () => {
                     >
                       Add New
                     </button>
-                    <AddIcon style={{ color: "white" }} />
+                    <AddIcon className="add-icon" style={{ color: "white" }} />
                   </div>
                 </div>
               </div>
